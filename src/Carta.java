@@ -6,10 +6,6 @@ public class Carta {
         this.ROL = ROL;
     }
 
-    public TipoCarta getTipo (){
-        return this.ROL;
-    }
-
     public TipoCarta getROL() {
         return ROL;
     }
