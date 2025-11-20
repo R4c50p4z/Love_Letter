@@ -7,7 +7,6 @@
  */
 public enum TipoCarta {
 
-    ESPIA(0,"Gana un punto de mas si nadie mas juega o descarta otro espia"),
     GUARDIA(1, "Adivina la carta de otro jugador"),
     SACERDOTE(2, "Mira la carta de un jugador"),
     BARON(3, "Comparas mano, pierde la más baja"),
@@ -42,10 +41,10 @@ public enum TipoCarta {
     espia, guardia, sacerdote, baron, doncella, principe, rey, conde, princesa. Es una forma de asegurar el codigo y 
     gestionar errores
     */ 
-    public static TipoCarta fromNombre(String nombre) {
+    public static Carta fromNombre(String nombre) {
         for (TipoCarta t : TipoCarta.values()) {
             if (t.name().equalsIgnoreCase(nombre)) {
-                return t;
+                return new Carta(t);
             }
         }
     throw new IllegalArgumentException("No existe esa carta: " + nombre);

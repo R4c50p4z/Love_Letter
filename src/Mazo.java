@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Mazo {
+public  class Mazo {
     private ArrayList<Carta> baraja = new ArrayList<>();
 
     public Mazo(Modalidad modo){
